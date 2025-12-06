@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>印尼历史</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; text-align: center; background: linear-gradient(to bottom, #d00000 0%, #d00000 50%, #ffffff 50%, #ffffff 100%); }
+        h2 { font-size: 1.8rem; margin-bottom: 20px; }
+        .topic { margin: 15px auto; font-size: 1rem; padding: 15px; max-width: 400px; background-color: rgba(255,255,255,0.85); border-radius: 8px; text-align: center; }
+        .topic h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .topic img { width: 100%; max-width: 350px; border-radius: 6px; cursor: pointer; }
+        .topic p { display: none; margin-top: 10px; text-align: left; }
+        .back-button { display: inline-block; margin: 20px 0; padding: 10px 20px; font-size: 1rem; color: #fff; background-color: #d00000; text-decoration: none; border-radius: 5px; transition: background-color 0.3s; }
+        .back-button:hover { background-color: #a00000; }
+    </style>
+</head>
+<body>
+
+<h2>印尼历史</h2>
+
+<div class="topic">
+    <h3>古爪哇王国 (Ancient Java Kingdoms)</h3>
+    <img src="images/history1.jpg" alt="Ancient Java" onclick="toggleText(this)">
+    <p>爪哇岛曾有多个古代王国，如马打兰王国和松巴哇王国。</p>
+</div>
+
+<div class="topic">
+    <h3>荷兰殖民时期 (Dutch Colonial Era)</h3>
+    <img src="images/history2.jpg" alt="Dutch Era" onclick="toggleText(this)">
+    <p>印尼长期受荷兰殖民统治，留下了建筑和文化遗产。</p>
+</div>
+
+<div class="topic">
+    <h3>独立战争 (Independence War)</h3>
+    <img src="images/history3.jpg" alt="Independence" onclick="toggleText(this)">
+    <p>印尼于1945年宣布独立，经过长期斗争才获得自由。</p>
+</div>
+
+<div class="topic">
+    <h3>文化遗产 (Cultural Heritage)</h3>
+    <img src="images/history4.jpg" alt="Cultural Heritage" onclick="toggleText(this)">
+    <p>印尼保存丰富的历史遗迹，包括庙宇、宫殿和古老艺术。</p>
+</div>
+
+<a href="index.html" class="back-button"><i class="fas fa-home"></i> 返回首页</a>
+
+<script>
+function toggleText(imgElement) {
+    const p = imgElement.nextElementSibling;
+    p.style.display = (p.style.display === "none" || p.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>印尼旅游</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; text-align: center; background: linear-gradient(to bottom, #d00000 0%, #d00000 50%, #ffffff 50%, #ffffff 100%); }
+        h2 { font-size: 1.8rem; margin-bottom: 20px; }
+        .topic { margin: 15px auto; font-size: 1rem; padding: 15px; max-width: 400px; background-color: rgba(255,255,255,0.85); border-radius: 8px; text-align: center; }
+        .topic h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .topic img { width: 100%; max-width: 350px; border-radius: 6px; cursor: pointer; }
+        .topic p { display: none; margin-top: 10px; text-align: left; }
+        .back-button { display: inline-block; margin: 20px 0; padding: 10px 20px; font-size: 1rem; color: #fff; background-color: #d00000; text-decoration: none; border-radius: 5px; transition: background-color 0.3s; }
+        .back-button:hover { background-color: #a00000; }
+    </style>
+</head>
+<body>
+
+<h2>印尼旅游</h2>
+
+<div class="topic">
+    <h3>巴厘岛 (Bali)</h3>
+    <img src="images/tourism1.jpg" alt="Bali" onclick="toggleText(this)">
+    <p>巴厘岛拥有迷人的海滩和文化艺术，是游客最喜欢的度假胜地。</p>
+</div>
+
+<div class="topic">
+    <h3>科莫多岛 (Komodo Island)</h3>
+    <img src="images/tourism2.jpg" alt="Komodo" onclick="toggleText(this)">
+    <p>科莫多岛以科莫多巨蜥著称，是世界自然遗产之一。</p>
+</div>
+
+<div class="topic">
+    <h3>拉布安巴霍 (Labuan Bajo)</h3>
+    <img src="images/tourism3.jpg" alt="Labuan Bajo" onclick="toggleText(this)">
+    <p>拉布安巴霍是前往科莫多国家公园的门户，以美丽港口和潜水胜地闻名。</p>
+</div>
+
+<div class="topic">
+    <h3>拉贾安帕特 (Raja Ampat)</h3>
+    <img src="images/tourism4.jpg" alt="Raja Ampat" onclick="toggleText(this)">
+    <p>拉贾安帕特以世界级潜水景点和丰富的海洋生物而闻名。</p>
+</div>
+
+<a href="index.html" class="back-button"><i class="fas fa-home"></i> 返回首页</a>
+
+<script>
+function toggleText(imgElement) {
+    const p = imgElement.nextElementSibling;
+    p.style.display = (p.style.display === "none" || p.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>
